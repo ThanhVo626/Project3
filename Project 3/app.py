@@ -26,7 +26,7 @@ vehicles = Base.classes.electricvehicles
 session = Session(engine)
 
 
-    # Query all info
+# Query all info
 results = session.query(vehicles.datayear, vehicles.county, vehicles.dashboardfueltypegroup,
                             vehicles.fueltype,vehicles.manufacturer,vehicles.model,vehicles.numberofvehicles).all()
 
@@ -56,14 +56,11 @@ def home():
     return render_template('index.html',all_vehicles = all_vehicles)
     
 
-@app.route('/Overall')
+@app.route('/about')
 def overall ():
 
-    return jsonify(all_vehicles)
+    return render_template('about.html')
 
-@app.route('/players')
-def players ():
-    return render_template('players.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -2,6 +2,14 @@
     margin: auto; 
     width: 65%;
     }
+.center2{
+    margin:auto;
+    width:10%;
+}
+
+.b{
+    color:black
+}
 
 .text-color{
     color:white
@@ -9,4 +17,12 @@
 
 .bg-color{
     background-color:#2a3036
+}
+
+.font{
+    font-family:Cambria;
+}
+
+.font-size{
+    font-size: 12px;
 }

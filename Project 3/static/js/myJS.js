@@ -24,7 +24,7 @@ for (let i =0; i < vehicles.length; i++){
 let data = [{
   y: value,
   x: label,
-  type: 'line'  
+  type: 'line',  
 }]
 var layout = {
   title: {text:"Total Vehicles by Year",font:{color:'#FFFFFF'}},

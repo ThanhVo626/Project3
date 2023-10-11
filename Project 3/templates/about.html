@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-color">
+    <h1 class="center2 text-color font">About</h1> 
+    <a class="b" href = "http://127.0.0.1:5000">Home</a>
+    <a class="b" href = "http://127.0.0.1:5000/about">About</a>
+
+    <div>
+    <p class="text-color">We used the data from <a class="text-color" href = "https://www.kaggle.com/datasets/natalyamatyushenko/zero-emission-vehicle-population-in-california">Kaggle</a> in order to create this webpage.<br>
+    By plotting the data we wanted to show how the electric <br>
+    vehicle industry has been developing over the last couple <br>
+    years. Using metrics such as County, Manufacturer, Models, <br>
+    and Fuel Types over the years. It is a constantly growing <br>
+    market with Tesla holding the majority of the market share.
+    
+    
+    </p>   
+    </div>
+
+
+<script src="{{ url_for('static', filename='js/plots.js') }}"></script>
+</body>
+</html>
